@@ -3,17 +3,14 @@
 FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
 WORKDIR /app
 EXPOSE 80
-
-# ENV ASPNETCORE_URLS=http://+:8000;http://+:80;
-# ENV ASPNETCORE_ENVIRONMENT=Development;
+EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["Apw.Lab.AWSSQS.Api.csproj", "Apw.Lab.AWSSQS.Api/"]
-
-RUN dotnet restore "Apw.Lab.AWSSQS.Api.csproj"
+COPY ["src/Apw.Lab.AWSSQS.Api/Apw.Lab.AWSSQS.Api.csproj", "src/Apw.Lab.AWSSQS.Api/"]
+RUN dotnet restore "src/Apw.Lab.AWSSQS.Api/Apw.Lab.AWSSQS.Api.csproj"
 COPY . .
-WORKDIR "/src/Apw.Lab.AWSSQS.Api"
+WORKDIR "/src/src/Apw.Lab.AWSSQS.Api"
 RUN dotnet build "Apw.Lab.AWSSQS.Api.csproj" -c Release -o /app/build
 
 FROM build AS publish
