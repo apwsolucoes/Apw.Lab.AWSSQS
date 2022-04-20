@@ -6,10 +6,8 @@ namespace Apw.Lab.AWSSQS.Consumer
     {
         static async Task Main(string[] args)
         {
-            SQSMessageConsumer sqsConsumer = new SQSMessageConsumer();
-
+            ApwLabAWSSQSConsumer sqsConsumer = new ApwLabAWSSQSConsumer();
             await sqsConsumer.Listen();
-
         }
     }
 }

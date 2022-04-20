@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Apw.Lab.AWSSQS.Consumer
 {
-    public class SQSMessageConsumer
+    public class ApwLabAWSSQSConsumer
     {
         private AmazonSQSClient _sqsClient;
         private bool _isPolling;
@@ -22,7 +22,7 @@ namespace Apw.Lab.AWSSQS.Consumer
         private CancellationTokenSource _source;
         private CancellationToken _token;
 
-        public SQSMessageConsumer()
+        public ApwLabAWSSQSConsumer()
         {
             _accessKey = "";
             _secret = "";

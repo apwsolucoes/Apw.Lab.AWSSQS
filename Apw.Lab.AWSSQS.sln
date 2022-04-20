@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWSSQS.Api", "AWSSQS.Api", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apw.Lab.AWSSQS.Consumer", "src\Apw.Lab.AWSSQS.Consumer\Apw.Lab.AWSSQS.Consumer.csproj", "{6630702A-3AE4-489A-8675-B54E158C3C1A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWSSQS.Producer", "AWSSQS.Producer", "{E95D1271-6812-41CE-8B94-DD98FC765534}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apw.Lab.AWSSQS.Producer", "src\Apw.Lab.AWSSQS.Producer\Apw.Lab.AWSSQS.Producer.csproj", "{056B0BAD-E344-40CE-ABCB-B8E54C55D1A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,10 @@ Global
 		{6630702A-3AE4-489A-8675-B54E158C3C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6630702A-3AE4-489A-8675-B54E158C3C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6630702A-3AE4-489A-8675-B54E158C3C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{056B0BAD-E344-40CE-ABCB-B8E54C55D1A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{056B0BAD-E344-40CE-ABCB-B8E54C55D1A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{056B0BAD-E344-40CE-ABCB-B8E54C55D1A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{056B0BAD-E344-40CE-ABCB-B8E54C55D1A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{AEEA759C-59EF-4D2B-8C58-1017772A9C38} = {74035D36-13DB-4B30-AE3F-EA59A47F282E}
 		{6630702A-3AE4-489A-8675-B54E158C3C1A} = {084F57C2-50B6-4380-A9EC-51DE52BEFF61}
+		{056B0BAD-E344-40CE-ABCB-B8E54C55D1A3} = {E95D1271-6812-41CE-8B94-DD98FC765534}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA994C7E-7E55-4761-8436-99227B1FED4E}
